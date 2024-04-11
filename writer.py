@@ -491,14 +491,16 @@ class ClassHeadersWriter(BromaTreeVisitor):
 
 def write_everything():
     _dir = Path(".temp")
-    with open(_dir / "Cocos2d.bro", "r") as fp:
-        code = fp.read() + "\n"
-    with open(_dir / "GeometryDash.bro", "r") as fp:
-        code += fp.read() + "\n"
-    with open(_dir / "Extras.bro", "r") as fp:
-        code += fp.read() + "\n" 
+    code = open(_dir / "Cocos2d.bro", "r").read() + "\n"
+    code += open(_dir / "GeometryDash.bro", "r").read() + "\n"
+    code += open(_dir / "Extras.bro", "r").read() + "\n" 
+    
     with open("_temp.bro", "w") as w:
         w.write(code)
+
+    _headers = Path("headers")
+    if not _headers.exists():
+        _headers.mkdir()
 
     chw = ClassHeadersWriter()
     chw.start(Root("_temp.bro"))

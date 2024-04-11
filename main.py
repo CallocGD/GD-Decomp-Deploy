@@ -16,7 +16,6 @@ async def downloadBindings(proxy:str = "", version:str = "2.205"):
         print("[+] Bindings Installed")
     print("[...] Building Decomp Enviornment")
     write_everything()
-    os.removedirs(".temp")
     print("[+] Decomp enviornment finished")
 
 async def downloadCocos2d(proxy:str = ""):
@@ -37,6 +36,11 @@ async def cli(proxy:str, version:str):
     for t in asyncio.as_completed([task1, task2]):
         await t
     print("[+] Installation Completed")
+    os.remove(".temp/Cocos2d.bro")
+    os.remove(".temp/Extras.bro")
+    os.remove(".temp/GeometryDash.bro")
+    os.remove("_temp.bro")
+
 
 if __name__ == "__main__":
     cli()

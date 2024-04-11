@@ -25,7 +25,7 @@ def format_url(filename: str, ver: str):
 def make_bindings_filenames(version: str):
     return {
         "GeometryDash.bro": format_url("GeometryDash.bro", version),
-        "Extras.bro": format_url("GeometryDash.bro", version),
+        "Extras.bro": format_url("Extras.bro", version),
         "Cocos2d.bro": format_url("Cocos2d.bro", version),
     }
 
