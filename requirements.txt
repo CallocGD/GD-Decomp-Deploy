@@ -1,0 +1,16 @@
+# TODO: Maybe this? so I can warn a user that msvc is required not just for cython but also C++ decomp...
+# setuptools
+
+# To Compile PyBroma There is currently no escape from this one >:)
+cython
+
+# PyBroma
+https://github.com/CallocGD/PyBroma/archive/refs/heads/main.zip
+
+# webserver stuff for downloading everything (git is not required)
+aiohttp
+aiohttp_socks
+
+# commandline
+asyncclick
+aiofiles
