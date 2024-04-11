@@ -2,11 +2,13 @@
 
 Used to build a Custom Geometry dash Decompiled Repository using the Geode-sdk-bindings to help as well as a python script
 this script and PyBroma. Having these libraries on hand will allow for all of the following to take place. This 
-software allows us to basically have and build a moving tent. 
+software allows us to basically have and build a moving tent. In fact you don't even need git to use this. 
+As a Dispace freak myself only Python and a C++ compiler is ever required.
 
-- Write C++ Header files
-- Write C++ Source files
-- Write Found Data and class members into given header files / homes 
+## Features
+- Writes C++ Header files
+- Writes C++ Source files
+- Writes Found Data and class members into given header files / homes 
 - Installs CocosHeaders with extra stuff like the correct fmt library and FMOD
 
 
