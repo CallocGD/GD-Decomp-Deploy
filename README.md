@@ -36,3 +36,6 @@ however you could compile the python tool into an executable file using pyinstal
 the tool is ran on the `click` python commandline library so the commandline should be faily readable 
 and easy for me and anyone else to maintain. The tool is asynchronous to allow for concurrent tasks to 
 be ran at hand just to help with one's impatience...
+
+When You are done you can delete the python script so that It doesn't overwrite your progress in the future. 
+
