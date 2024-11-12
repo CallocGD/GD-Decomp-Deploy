@@ -73,3 +73,4 @@ def destory_temp_dir():
     """Used as part of the cleanup operation..."""
     if os.path.exists(".temp"):
         os.remove(".temp")
+
